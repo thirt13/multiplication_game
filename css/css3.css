@@ -1,0 +1,242 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    line-height: 1.5em;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #00acfe;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 50%;
+    overflow-x: hidden; 
+}
+
+a {
+    color: #818181;
+    text-decoration:none;
+}
+
+a:hover, a:focus {
+    color: #f1f1f1;
+    text-decoration:none;
+}
+
+h1 {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-top: 0px;
+    padding-left: 45px;
+}
+
+main {
+    margin: auto;
+    margin-top:10px;
+    margin-bottom: 10px;
+    width: 90%;
+    min-height:95vh;
+    background-image: linear-gradient(155deg, #bae9ff 0%, #21b7ff 100%);
+    font-size: 1.1em;
+    padding: 10px 10px;
+    color: #004465;
+    text-align: center;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+div.main-nav {
+    flex: 40%;
+    padding: 0px 10px;
+    margin: 0px;
+    height: auto;
+    text-align: left;
+}
+
+.main-nav div#back {
+    text-align: right;
+}
+
+div.main-canvas {
+    flex: 60%;
+    padding: 0px;
+    margin: 0px;
+    height: auto;
+    text-align: center;
+}
+
+img.umik {
+    width: 40px;
+    position: relative;
+    top:40px;
+    z-index: 0;
+}
+
+#score,
+#eating {
+    font-size: 1.2em;
+    
+}
+
+#score span {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+#eating span {
+    font-weight: 700;
+}
+
+#eating span >span {
+    font-weight: 700;
+    color: green;
+}
+
+#eating2 {
+    font-size: 1em;
+}
+
+#eating2 span {
+    font-size: 0.8;
+    font-weight: 600;
+    color: green;
+}
+
+input[type=text] {
+    padding: 4px;
+    margin:50px 10px 10px 10px;
+    border: 0;
+    width: 95%;
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase; 
+    text-align: center;
+    background-color: #edf9ff;
+}
+
+input[type=radio] {
+    scale: 1.7;
+    margin: 20px 10px;
+}
+
+.myButton {
+	box-shadow: 0px 1px 0px 0px #f0f7fa;
+	background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+	background-color:#33bdef;
+	border-radius:10px;
+	border:1px solid #057fd0;
+	display:inline-block;
+	cursor:pointer;
+    color: #edf9ff;
+	font-size:1.3em;
+	font-weight:700;
+	padding:15px 15px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #5b6178;
+}
+
+.reduce {
+    font-size:1.2em;
+	font-weight:700;
+	padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.reduce2 {
+    font-size:1.2em;
+	font-weight:700;
+    margin-top: 10px;
+	padding: 6px 15px;
+    width: 140px;
+    text-align: center;
+}
+
+.myButton:hover {
+	background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+	background-color:#019ad2;
+    color:#a5e0fc;
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+div.text {
+    text-align: justify;
+}
+
+div.text p > span {
+    font-weight: 600;
+}
+
+#myMathCanvas {
+    display: flex;
+    border: 2px solid #a5e0fc;
+    background-color: #e8f5fa;
+    margin: auto;
+    margin-top: 0px;
+} 
+
+canvas {
+    display: flex;
+    margin: auto;
+    margin-top: -20px;
+    width: 90%;
+    height: auto;
+    z-index: 1;
+} 
+
+
+@media only screen and (max-width: 768px) {
+    
+    body {
+        background-color: #a5e0fc !important;
+    }
+
+    main {
+        flex:100%;
+        flex-direction: column;
+        width: 100vw;
+        margin: 0px 0px;
+        padding: 10px;
+    }
+    
+    div.main-nav {
+        flex:100%;
+        width: 90vw;
+        padding: 0px 10px;
+        margin: 0px;
+        height: auto;
+        text-align: left;
+    }
+
+    div.main-canvas {
+        flex: 100%;
+        width: 90vw;
+        padding: 0px;
+        margin: 0px;
+        height: auto;
+        text-align: center;
+    }
+
+    #myMathCanvas {
+        flex: 100%;
+        width: 94vw !important;
+        height: auto;
+    }
+    
+    .reduce2 {
+        margin-top: 10px;
+        padding: 6px 20px;
+        width: 120px;
+        text-align: center;
+    }
+        
+
+}

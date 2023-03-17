@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html;"/>
+    <meta name="description" content="Hra na vyjmenování násobilky" />
+	<link rel="stylesheet" type="text/css" href="./css/css3.css" title="Layout CSS" />
+</head>
+
+<body>
+    <main>
+        <div class="main-canvas">
+            <canvas id="myMathCanvas"></canvas>
+            <div id="up" class="myButton reduce2">nahoru</div><br>
+            <div id="left" class="myButton reduce2">vlevo</div>
+            <div id="right" class="myButton reduce2">vpravo</div><br>
+            <div id="down" class="myButton reduce2">dolů</div>
+        </div>
+        <div class="main-nav">
+            <div id="score">score: <span>0</span></div>
+            <div id="eating">sežraná čísla: <span></span></div>
+             <div id="eating2">správná řada: <span></span></div>
+            <input type="text" id="newNumber" name="number">
+            <input type="radio" id="radio1" name="basic" checked>základní násobilka
+            <input type="radio" id="radio2" name="basic">master násobilka
+            <div id="newGame" class="myButton reduce">nová hra</div>
+            <div class="text">
+                <img src="./img/headNoEat.png" alt="Umik" class="umik">
+                <h1>Umík se učí násobilku</h1>
+                <p>Tvým úkolem je naučit Umíka násobilku. Čísla musí do hlavy dostat ve správném pořadí. Nejprve číslo 2, pak 4, pak 6, ... Přesně popořadě, jako když ses učil ty.</p>
+                <p>Když už Umík zvládne násobilku čísla 2, zkus mu vysvětlit i ostatní. Do políčka napiš číslo, které chceš Umíka naučit, např. 5 a klikni na tlačítko <span>nová hra</span>. Pomoz mu sebrat čísla ve správném pořadí.</p>
+                <p><span>OVLÁDÁNÍ:</span> Ovládat Umíka můžeš pomocí šipek na klávesnici nebo pomocí tlačítek pod herní plochou. </p>
+                <p><span>Těžší varianta hry:</span> Na hrací ploše se objevují i jiná čísla, která do násobilky nepatří. Dávej pozor, ať Umík sebere ty správné. </p>
+            </div>
+        </div>    
+    </main>
+    <script src="./js/math01.js"></script>
+</body>
+</html>
